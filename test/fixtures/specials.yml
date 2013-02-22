@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  drink: MyString
+  day: MyString
+  bar_id: 1
+  city_id: 1
+
+two:
+  drink: MyString
+  day: MyString
+  bar_id: 1
+  city_id: 1
