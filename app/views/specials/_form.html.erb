@@ -16,16 +16,13 @@
     <%= f.text_field :drink %>
   </div>
   <div class="field">
-    <%= f.label :day %><br />
-    <%= f.text_field :day %>
+    <%= f.select :day, Date::DAYNAMES.zip((0..6).to_a), :prompt => 'Select Day' %>
   </div>
   <div class="field">
-    <%= f.label :bar_id %><br />
-    <%= f.number_field :bar_id %>
+    <%= collection_select(:special, :bar_id, Bar.all, :id, :name, :prompt => 'Select Bar') %>
   </div>
   <div class="field">
-    <%= f.label :city_id %><br />
-    <%= f.number_field :city_id %>
+     <%= collection_select(:special, :city_id, City.all, :id, :local, :prompt => 'Select City') %>
   </div>
   <div class="actions">
     <%= f.submit %>
