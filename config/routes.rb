@@ -1,4 +1,6 @@
 Tapadeal::Application.routes.draw do
+  devise_for :admins
+
   resources :specials
 
 
