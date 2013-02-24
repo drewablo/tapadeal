@@ -1,6 +1,6 @@
 <h1>Listing bars</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Name</th>
     <th>City</th>
@@ -12,14 +12,14 @@
 <% @bars.each do |bar| %>
   <tr>
     <td><%= bar.name %></td>
-    <td><%= bar.city_id %></td>
-    <td><%= link_to 'Show', bar %></td>
-    <td><%= link_to 'Edit', edit_bar_path(bar) %></td>
-    <td><%= link_to 'Destroy', bar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= bar.city.local %></td>
+    <td><%= link_to 'Show', bar, :class => 'btn' %></td>
+    <td><%= link_to 'Edit', edit_bar_path(bar), :class => 'btn' %></td>
+    <td><%= link_to 'Destroy', bar, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-destroy' %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Bar', new_bar_path %>
+<%= link_to 'New Bar', new_bar_path, :class => 'btn' %>

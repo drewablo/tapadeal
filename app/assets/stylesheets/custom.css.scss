@@ -19,10 +19,15 @@ textarea {
 }
 
 .center {
-  text-align: center;
+  float: none;
+ 
 }
 
 .center h1 {
   margin-bottom: 10px;
 }
 
+main {
+ margin:0 auto;
+ float:none;
+}
