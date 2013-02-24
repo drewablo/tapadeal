@@ -3,7 +3,8 @@ Tapadeal::Application.routes.draw do
 
   resources :specials
 
-
+  resources :deals
+  
   resources :bars
 
 
