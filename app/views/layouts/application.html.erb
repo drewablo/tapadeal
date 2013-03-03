@@ -6,15 +6,28 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<div class="row-fluid center">
+<body>
+<div class="navbar">
+  <div class="navbar-inner well">
+    <ul class="nav nav-pills">
+		<li class="active">
+			<a href="#"><strong>Tap A Deal</strong></a>
+			</li>
+		<li><a href="#">Deals by Bar</a></li>
+		<li><a href="#">Deals by Day</a></li>
+	</ul>
+ </div>
+ 
+<div id="landing" class="row-fluid center">
   <div class="span5 offset2">
     <%= yield %>
 	</div>
-  <div class="span3">
-    FooBar
-    </div>
-</div>
+  <div id="sidebar" class="span3">
+	<div id="map" class="span12">
+		<iframe width='300' height='300' frameBorder='1' src='http://a.tiles.mapbox.com/v3/drewablo.springfield_il_bars.html#12/39.7988/-89.6515'></iframe>
+	</div>
+	
+
 </body>
 </html>

@@ -10,7 +10,7 @@ Tapadeal::Application.routes.draw do
 
   resources :cities
 
- # root :to => 'specials#show'
+  root :to => 'deals#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

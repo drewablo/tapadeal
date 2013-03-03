@@ -1,13 +1,14 @@
 @import "bootstrap";
 
 
-
 html {
   overflow-y: scroll;
 }
 
-body {
-  padding-top: 60px;
+#landing {
+  padding-top: 20px;
+  color: #ffffff;
+
 }
 
 section {
@@ -31,3 +32,4 @@ main {
  margin:0 auto;
  float:none;
 }
+
